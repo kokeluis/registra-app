@@ -1,0 +1,19 @@
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .center-button {
+    text-align: center;
+    width: 80%; /* Ancho del botón */
+    max-width: 300px; /* Ancho máximo del botón */
+    margin-top: 20px; /* Espacio superior del botón */
+  }
+  

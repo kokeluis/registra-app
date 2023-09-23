@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Registrar Asistencia
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Registrar Asistencia</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Contenido de la página -->
+  <div class="content">
+    <!-- Mostrar fecha y hora actuales -->
+    <p>Fecha y Hora Actuales: {{ currentDateTime }}</p>
+    
+    <!-- Botón para registrar asistencia -->
+    <ion-button expand="full" (click)="registrarAsistencia()">Registro de Asistencia</ion-button>
+  </div>
 </ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Iniciar sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <div class="logo-container">
+    <img src="https://i.pinimg.com/564x/c8/f5/5f/c8f55f8131babd89b1bdca3e560b15f0.jpg">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-button expand="block" color="primary" (click)="login()" >Iniciar sesión</ion-button>
+        <!-- <ion-button [routerLink]="['/registration']" expand="block" color="secondary">Registrar</ion-button> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-button size="small" fill="clear" color="medium" [routerLink]="['/password-recovery']">¿Olvidaste tu contraseña?</ion-button>
+</ion-footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->

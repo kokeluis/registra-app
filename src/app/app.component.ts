@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor() {}
+  public imgLogo: String='./Logo/ImgLogo.png'
 }
